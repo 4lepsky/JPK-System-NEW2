@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background-image: -webkit-linear-gradient(270deg, #141b4e 0%, #d9d9d9 50%, #adbee5 100%);
+    background-image: -moz-linear-gradient(270deg, #141b4e 0%, #d9d9d9 50%, #adbee5 100%);
+    background-image: -o-linear-gradient(270deg, #141b4e 0%, #d9d9d9 50%, #adbee5 100%);
+    background-image: linear-gradient(180deg, #141b4e 0%, #d9d9d9 50%, #adbee5 100%);
+    
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #cfd16c;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #cfd16c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#254066,#849eed);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #6c6cd1; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: 2px solid #6c6cd1; /* Border color and thickness */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #cfd16c; /* Background color */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+.menu ul li a:hover {
+    background-color: #6c6cd1; /* Background color on hover */
+    color: #cfd16c; /* Text color on hover */
+}
+
